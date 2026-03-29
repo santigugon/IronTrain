@@ -52,6 +52,7 @@ export default function SummaryPage() {
     <div className="flex flex-1 flex-col gap-3">
       <PageHeader
         title="Summary"
+        stacked
         subtitle={
           rows === null
             ? "Loading…"

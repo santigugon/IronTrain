@@ -15,7 +15,12 @@ create table if not exists public.trainings (
   notes text not null default '',
   completed boolean not null default false,
   completed_at timestamptz null,
-  created_at timestamptz not null default now()
+  effort_rating smallint null,
+  effort_note text null,
+  created_at timestamptz not null default now(),
+  constraint trainings_effort_rating_range check (
+    effort_rating is null or (effort_rating >= 1 and effort_rating <= 5)
+  )
 );
 
 create index if not exists trainings_date_idx on public.trainings(date);

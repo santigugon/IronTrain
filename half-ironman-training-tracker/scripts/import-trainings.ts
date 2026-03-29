@@ -50,6 +50,8 @@ async function main() {
     notes: t.notes ?? "",
     completed: false,
     completed_at: null,
+    effort_rating: null,
+    effort_note: null,
   }));
 
   const { error } = await supabase

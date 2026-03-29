@@ -4,6 +4,12 @@ import { DISCIPLINE_ORDER } from "@/config/constants";
 import { getSupabaseClient } from "@/lib/supabase/client";
 import type { TrainingRow } from "./types";
 
+/** Saved when marking a single session as done from the training list. */
+export type TrainingCompletionEffort = {
+  rating: number;
+  note: string;
+};
+
 export function groupByDate(rows: TrainingRow[]) {
   const map = new Map<string, TrainingRow[]>();
   for (const r of rows) {
@@ -58,14 +64,39 @@ export async function fetchTrainingsForMonth(anchorDateIso: string) {
 
 export async function toggleTrainingCompleted(
   id: string,
-  completed: boolean
+  completed: boolean,
+  effort?: TrainingCompletionEffort
 ) {
   const supabase = getSupabaseClient();
+  if (!completed) {
+    const { error } = await supabase
+      .from("trainings")
+      .update({
+        completed: false,
+        completed_at: null,
+        effort_rating: null,
+        effort_note: null,
+      })
+      .eq("id", id);
+    if (error) throw error;
+    return;
+  }
+  if (
+    !effort ||
+    !Number.isInteger(effort.rating) ||
+    effort.rating < 1 ||
+    effort.rating > 5
+  ) {
+    throw new Error("effort.rating must be an integer from 1 to 5");
+  }
+  const noteTrim = effort.note.trim();
   const { error } = await supabase
     .from("trainings")
     .update({
-      completed,
-      completed_at: completed ? new Date().toISOString() : null,
+      completed: true,
+      completed_at: new Date().toISOString(),
+      effort_rating: effort.rating,
+      effort_note: noteTrim.length > 0 ? noteTrim : null,
     })
     .eq("id", id);
   if (error) throw error;
@@ -78,6 +109,8 @@ export async function setAllCompletedForDate(dateIso: string, completed: boolean
     .update({
       completed,
       completed_at: completed ? new Date().toISOString() : null,
+      effort_rating: null,
+      effort_note: null,
     })
     .eq("date", dateIso);
   if (error) throw error;

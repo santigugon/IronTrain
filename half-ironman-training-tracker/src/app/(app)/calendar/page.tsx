@@ -28,6 +28,7 @@ import {
   groupByDate,
   setAllCompletedForDate,
   toggleTrainingCompleted,
+  type TrainingCompletionEffort,
 } from "@/lib/data/trainings";
 import type { TrainingRow } from "@/lib/data/types";
 
@@ -58,8 +59,8 @@ export default function CalendarPage() {
       setMonthRows(rows);
       const grouped = groupByDate(rows);
       setByDate(grouped);
-    } catch (e: any) {
-      toast.error(e?.message ?? "Failed to load month");
+    } catch (e: unknown) {
+      toast.error(e instanceof Error ? e.message : "Failed to load month");
       setMonthRows([]);
       setByDate(new Map());
     }
@@ -70,10 +71,14 @@ export default function CalendarPage() {
   }, [refreshMonth]);
 
   function onPrevMonth() {
+    setOpen(false);
+    setSelectedIso(null);
     setMonth((m) => addMonths(m, -1));
   }
 
   function onNextMonth() {
+    setOpen(false);
+    setSelectedIso(null);
     setMonth((m) => addMonths(m, 1));
   }
 
@@ -81,6 +86,8 @@ export default function CalendarPage() {
     // value is "YYYY-MM" from <input type="month" />
     const [y, m] = value.split("-").map((v) => Number(v));
     if (!y || !m) return;
+    setOpen(false);
+    setSelectedIso(null);
     setMonth(new Date(y, m - 1, 1));
   }
 
@@ -91,47 +98,98 @@ export default function CalendarPage() {
     try {
       const rows = await fetchTrainingsForDate(iso);
       setSelectedRows(rows);
-    } catch (e: any) {
-      toast.error(e?.message ?? "Failed to load day");
+    } catch (e: unknown) {
+      toast.error(e instanceof Error ? e.message : "Failed to load day");
       setSelectedRows([]);
     }
   }
 
-  async function onToggle(id: string, completed: boolean) {
+  async function onToggle(
+    id: string,
+    completed: boolean,
+    effort?: TrainingCompletionEffort
+  ) {
     setSelectedRows((prev) =>
-      (prev ?? []).map((t) => (t.id === id ? { ...t, completed } : t))
+      (prev ?? []).map((t) =>
+        t.id === id
+          ? {
+              ...t,
+              completed,
+              completed_at: completed ? new Date().toISOString() : null,
+              effort_rating:
+                completed && effort ? effort.rating : null,
+              effort_note:
+                completed && effort
+                  ? effort.note.trim() || null
+                  : null,
+            }
+          : t
+      )
     );
     setMonthRows((prev) =>
-      prev.map((t) => (t.id === id ? { ...t, completed } : t))
+      prev.map((t) =>
+        t.id === id
+          ? {
+              ...t,
+              completed,
+              completed_at: completed ? new Date().toISOString() : null,
+              effort_rating:
+                completed && effort ? effort.rating : null,
+              effort_note:
+                completed && effort
+                  ? effort.note.trim() || null
+                  : null,
+            }
+          : t
+      )
     );
 
     try {
-      await toggleTrainingCompleted(id, completed);
+      await toggleTrainingCompleted(id, completed, effort);
       await refreshMonth();
       if (selectedIso) {
         const rows = await fetchTrainingsForDate(selectedIso);
         setSelectedRows(rows);
       }
-    } catch (e: any) {
-      toast.error(e?.message ?? "Failed to update");
+    } catch (e: unknown) {
+      toast.error(e instanceof Error ? e.message : "Failed to update");
       await refreshMonth();
       if (selectedIso) void openDay(selectedIso);
+      throw e;
     }
   }
 
   async function onMarkAll(completed: boolean) {
     if (!selectedIso) return;
-    setSelectedRows((prev) => (prev ?? []).map((t) => ({ ...t, completed })));
+    setSelectedRows((prev) =>
+      (prev ?? []).map((t) => ({
+        ...t,
+        completed,
+        completed_at: completed ? new Date().toISOString() : null,
+        effort_rating: null,
+        effort_note: null,
+      }))
+    );
     setMonthRows((prev) =>
-      prev.map((t) => (t.date === selectedIso ? { ...t, completed } : t))
+      prev.map((t) =>
+        t.date === selectedIso
+          ? {
+              ...t,
+              completed,
+              completed_at: completed ? new Date().toISOString() : null,
+              effort_rating: null,
+              effort_note: null,
+            }
+          : t
+      )
     );
     try {
       await setAllCompletedForDate(selectedIso, completed);
       await refreshMonth();
       const rows = await fetchTrainingsForDate(selectedIso);
       setSelectedRows(rows);
-    } catch (e: any) {
-      toast.error(e?.message ?? "Failed to update");
+    } catch (e: unknown) {
+      toast.error(e instanceof Error ? e.message : "Failed to update");
       await refreshMonth();
       void openDay(selectedIso);
     }
@@ -142,42 +200,42 @@ export default function CalendarPage() {
       <PageHeader
         title="Calendar"
         subtitle="Month view (events)"
-        right={
-          <div className="flex items-center gap-2">
-            <Button
-              variant="secondary"
-              size="icon"
-              className="bg-white/10"
-              onClick={onPrevMonth}
-              aria-label="Previous month"
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </Button>
-            <Badge variant="secondary" className="bg-white/10">
-              <CalendarIcon className="mr-1 h-3.5 w-3.5" />
-              {format(month, "MMM yyyy")}
-            </Badge>
-            <Button
-              variant="secondary"
-              size="icon"
-              className="bg-white/10"
-              onClick={onNextMonth}
-              aria-label="Next month"
-            >
-              <ChevronRight className="h-4 w-4" />
-            </Button>
-            <input
-              type="month"
-              value={monthInputValue}
-              onChange={(e) => onMonthPicked(e.target.value)}
-              className="h-9 rounded-md border border-white/10 bg-white/5 px-2 text-xs text-foreground"
-              aria-label="Pick month"
-            />
-          </div>
-        }
+        stacked
       />
 
-      <GlassCard className="p-3">
+      <div className="flex flex-wrap items-center gap-2">
+        <Button
+          variant="secondary"
+          size="icon"
+          className="h-11 min-h-11 w-11 min-w-11 shrink-0 bg-white/10"
+          onClick={onPrevMonth}
+          aria-label="Previous month"
+        >
+          <ChevronLeft className="!size-6" />
+        </Button>
+        <Badge variant="secondary" className="bg-white/10 px-2 py-1.5 text-sm">
+          <CalendarIcon className="mr-1 size-4" />
+          {format(month, "MMM yyyy")}
+        </Badge>
+        <Button
+          variant="secondary"
+          size="icon"
+          className="h-11 min-h-11 w-11 min-w-11 shrink-0 bg-white/10"
+          onClick={onNextMonth}
+          aria-label="Next month"
+        >
+          <ChevronRight className="!size-6" />
+        </Button>
+        <input
+          type="month"
+          value={monthInputValue}
+          onChange={(e) => onMonthPicked(e.target.value)}
+          className="h-11 min-h-11 min-w-[9.5rem] rounded-md border border-white/10 bg-white/5 px-3 text-sm text-foreground"
+          aria-label="Pick month"
+        />
+      </div>
+
+      <GlassCard className="w-full min-w-0 p-3">
         {monthRows.length === 0 ? (
           <div className="flex flex-col gap-2 p-3">
             <div className="text-sm font-medium">No trainings loaded</div>
@@ -192,7 +250,7 @@ export default function CalendarPage() {
           </div>
         ) : (
           <EventCalendar
-            selectedDate={selectedIso ?? monthAnchorIso ?? todayIso}
+            selectedDate={monthAnchorIso}
             trainings={monthRows}
             onSelectDate={(iso) => void openDay(iso)}
           />

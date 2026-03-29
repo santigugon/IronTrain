@@ -10,6 +10,9 @@ export type TrainingRow = {
   notes: string;
   completed: boolean;
   completed_at: string | null;
+  /** 1–5 perceived difficulty when marked done; null if not set or undone */
+  effort_rating: number | null;
+  effort_note: string | null;
   created_at: string;
 };
 

@@ -8,6 +8,7 @@ import { toast } from "sonner";
 import { GlassCard } from "@/components/GlassCard";
 import { PageHeader } from "@/components/PageHeader";
 import { TrainingList } from "@/components/TrainingList";
+import { Button } from "@/components/ui/button";
 import { StreakCountdown } from "@/components/widgets/StreakCountdown";
 import { isoDate } from "@/lib/data/date";
 import {
@@ -15,6 +16,7 @@ import {
   fetchTrainingsForDate,
   setAllCompletedForDate,
   toggleTrainingCompleted,
+  type TrainingCompletionEffort,
 } from "@/lib/data/trainings";
 import type { TrainingRow } from "@/lib/data/types";
 
@@ -52,24 +54,51 @@ export default function TodayPage() {
     return trainings.reduce((sum, t) => sum + (t.duration_min ?? 0), 0);
   }, [trainings]);
 
-  async function onToggle(id: string, completed: boolean) {
+  async function onToggle(
+    id: string,
+    completed: boolean,
+    effort?: TrainingCompletionEffort
+  ) {
     if (!trainings) return;
     setTrainings((prev) =>
-      (prev ?? []).map((t) => (t.id === id ? { ...t, completed } : t))
+      (prev ?? []).map((t) =>
+        t.id === id
+          ? {
+              ...t,
+              completed,
+              completed_at: completed ? new Date().toISOString() : null,
+              effort_rating:
+                completed && effort ? effort.rating : null,
+              effort_note:
+                completed && effort
+                  ? effort.note.trim() || null
+                  : null,
+            }
+          : t
+      )
     );
     try {
-      await toggleTrainingCompleted(id, completed);
+      await toggleTrainingCompleted(id, completed, effort);
       const s = await computeStreak(todayIso);
       setStreak(s);
     } catch (e: unknown) {
       toast.error(e instanceof Error ? e.message : "Failed to update");
       await refresh();
+      throw e;
     }
   }
 
   async function onMarkAll(completed: boolean) {
     if (!trainings) return;
-    setTrainings((prev) => (prev ?? []).map((t) => ({ ...t, completed })));
+    setTrainings((prev) =>
+      (prev ?? []).map((t) => ({
+        ...t,
+        completed,
+        completed_at: completed ? new Date().toISOString() : null,
+        effort_rating: null,
+        effort_note: null,
+      }))
+    );
     try {
       await setAllCompletedForDate(dayIso, completed);
       const s = await computeStreak(todayIso);
@@ -101,33 +130,40 @@ export default function TodayPage() {
       <PageHeader
         title="Day"
         subtitle={subtitle}
+        stacked
         right={
-          <div className="flex items-center gap-2">
-            <button
-              className="rounded-xl bg-white/10 px-2 py-2 text-xs text-muted-foreground hover:bg-white/15"
+          <div className="flex flex-wrap items-center justify-end gap-2">
+            <Button
+              variant="secondary"
+              size="icon"
+              className="h-11 min-h-11 w-11 min-w-11 shrink-0 bg-white/10"
               onClick={onPrevDay}
               aria-label="Previous day"
             >
-              <ChevronLeft className="h-4 w-4" />
-            </button>
-            <button
-              className="rounded-xl bg-white/10 px-3 py-2 text-xs text-muted-foreground hover:bg-white/15"
+              <ChevronLeft className="!size-6" />
+            </Button>
+            <Button
+              variant="secondary"
+              size="sm"
+              className="h-11 min-h-11 bg-white/10 px-4 text-sm"
               onClick={() => setDayIso(todayIso)}
             >
               Today
-            </button>
-            <button
-              className="rounded-xl bg-white/10 px-2 py-2 text-xs text-muted-foreground hover:bg-white/15"
+            </Button>
+            <Button
+              variant="secondary"
+              size="icon"
+              className="h-11 min-h-11 w-11 min-w-11 shrink-0 bg-white/10"
               onClick={onNextDay}
               aria-label="Next day"
             >
-              <ChevronRight className="h-4 w-4" />
-            </button>
+              <ChevronRight className="!size-6" />
+            </Button>
             <input
               type="date"
               value={dayIso}
               onChange={(e) => onPickDay(e.target.value)}
-              className="h-9 rounded-md border border-white/10 bg-white/5 px-2 text-xs text-foreground"
+              className="h-11 min-h-11 min-w-[10.5rem] rounded-md border border-white/10 bg-white/5 px-3 text-sm text-foreground"
               aria-label="Pick day"
             />
           </div>
@@ -143,7 +179,7 @@ export default function TodayPage() {
             <div className="mt-1 text-lg font-semibold">{minutesToday} min</div>
           </div>
           <button
-            className="rounded-xl bg-white/10 px-3 py-2 text-xs text-muted-foreground hover:bg-white/15"
+            className="rounded-xl bg-white/10 px-3 py-2 text-xs text-muted-foreground hover:bg-white/75"
             onClick={() => void refresh()}
           >
             Refresh

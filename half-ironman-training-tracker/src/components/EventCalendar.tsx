@@ -9,9 +9,20 @@ import {
   createViewWeek,
 } from "@schedule-x/calendar";
 
+import type { Temporal as TemporalTypes } from "@js-temporal/polyfill";
+
 import { DISCIPLINE_COLORS, type Discipline } from "@/config/constants";
 import type { TrainingRow } from "@/lib/data/types";
 import { Temporal } from "@/lib/temporal";
+
+/** Schedule-X React hook only creates the app once; sync range + events via internals. */
+type CalendarAppWithInternals = {
+  events: { set: (events: unknown[]) => void };
+  $app: {
+    datePickerState: { selectedDate: { value: TemporalTypes.PlainDate } };
+    calendarState: { setRange: (d: TemporalTypes.PlainDate) => void };
+  };
+};
 
 function toScheduleXColors(twBgClass: string) {
   // Event "container" is the background behind the title.
@@ -122,6 +133,24 @@ export function EventCalendar({
         }
       : undefined,
   });
+
+  React.useEffect(() => {
+    if (!calendarApp) return;
+    calendarApp.events.set(events);
+  }, [calendarApp, events]);
+
+  React.useEffect(() => {
+    if (!calendarApp) return;
+    const app = calendarApp as unknown as CalendarAppWithInternals;
+    const $app = app.$app;
+    if (!$app?.datePickerState || !$app?.calendarState) return;
+    const current = $app.datePickerState.selectedDate.value.toString();
+    const next = selectedTemporalDate.toString();
+    if (current !== next) {
+      $app.datePickerState.selectedDate.value = selectedTemporalDate;
+      $app.calendarState.setRange(selectedTemporalDate);
+    }
+  }, [calendarApp, selectedTemporalDate]);
 
   return (
     <div className="sx-react-calendar-wrapper">
