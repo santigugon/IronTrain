@@ -18,6 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Half IronMan Tracker",
   description: "Mobile training calendar and streak tracker",
+  icons: {
+    icon: [{ url: "/ironManIcon.webp", type: "image/webp" }],
+    apple: "/ironManIcon.webp",
+  },
 };
 
 export default function RootLayout({

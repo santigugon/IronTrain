@@ -4,1212 +4,301 @@
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m calentamiento + 4x50m patada con tabla + 4x50m un brazo alternado + 4x50m respiración bilateral + 4x100m ritmo suave",
+    "description": "200m calentamiento + 4x50m patada con tabla (30s) + 4x50m un brazo alternado (30s) + 4x50m respiración bilateral (30s) + 6x100m ritmo cómodo (40s) + 100m enfriamiento",
     "duration_min": 45,
     "intensity": "Easy",
-    "notes": "Enfocado en técnica"
-  },
-  {
-    "date": "2026-04-06",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "Circuito 3 rondas: plancha 30s, puente glúteo 12 reps, sentadilla goblet 10 reps, peso muerto ligero 10 reps",
-    "duration_min": 40,
-    "intensity": "Moderate",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-07",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Enfocarte en técnica, no en velocidad"
   },
   {
     "date": "2026-04-08",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m calentamiento + 800m continuo sin parar + 100m suave",
-    "duration_min": 35,
+    "description": "200m calentamiento + 8x100m ritmo constante (30–40s) + 4x50m muy suaves + 100m enfriamiento",
+    "duration_min": 45,
     "intensity": "Moderate",
-    "notes": "Ritmo constante"
-  },
-  {
-    "date": "2026-04-09",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min calentamiento + 40 min en zona 2 constante + 10 min enfriamiento",
-    "duration_min": 60,
-    "intensity": "Z2 (Watts)",
-    "notes": "Cadencia 85-95"
-  },
-  {
-    "date": "2026-04-10",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "5 km trote continuo",
-    "duration_min": 35,
-    "intensity": "Z2 (HR)",
-    "notes": "Muy cómodo"
-  },
-  {
-    "date": "2026-04-11",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min calentamiento + 60 min en zona 2 + 15 min suave",
-    "duration_min": 90,
-    "intensity": "Z2 (Watts)",
-    "notes": "Practicar hidratación"
-  },
-  {
-    "date": "2026-04-11",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "10 min trote inmediato al bajar de la bici",
-    "duration_min": 10,
-    "intensity": "Z2 (HR)",
-    "notes": "Adaptación piernas"
-  },
-  {
-    "date": "2026-04-12",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "8 km trote continuo",
-    "duration_min": 50,
-    "intensity": "Z2 (HR)",
-    "notes": ""
+    "notes": "Mantener mismo ritmo"
   },
   {
     "date": "2026-04-13",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 6x50m patada + 6x50m técnica agarre (catch) + 4x100m ritmo controlado",
+    "description": "200m + 4x50m patada + 4x50m respiración bilateral + 4x50m técnica agarre (catch) + 6x100m cómodos (30s) + 100m suave",
     "duration_min": 45,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-13",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "Core + pierna ligera: plancha lateral, lunges, puente glúteo, peso muerto ligero",
-    "duration_min": 40,
-    "intensity": "Moderate",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-14",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Controlar respiración"
   },
   {
     "date": "2026-04-15",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m + 1000m continuo + 100m suave",
-    "duration_min": 40,
+    "description": "200m + 4x100m (30s) + 2x200m (40s) + 4x50m suaves + 100m enfriamiento",
+    "duration_min": 45,
     "intensity": "Moderate",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-16",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 3x8 min en zona 3 con 3 min suaves entre bloques + enfriamiento",
-    "duration_min": 65,
-    "intensity": "Z2-Z3 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-17",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "6 km trote continuo",
-    "duration_min": 40,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-18",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min + 75 min zona 2 + 15 min suave",
-    "duration_min": 105,
-    "intensity": "Z2 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-18",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "12 min trote post bici",
-    "duration_min": 12,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-19",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "9 km trote continuo",
-    "duration_min": 55,
-    "intensity": "Z2 (HR)",
-    "notes": ""
+    "notes": "Primer contacto con bloques largos"
   },
   {
     "date": "2026-04-20",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 8x50m técnica + 4x100m ritmo suave",
-    "duration_min": 45,
+    "description": "200m + 6x50m técnica (patada, un brazo, respiración) + 4x100m ritmo controlado + 200m suave",
+    "duration_min": 40,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-21",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Sesión ligera"
   },
   {
     "date": "2026-04-22",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m calentamiento + 1200m continuo + 100m suave",
-    "duration_min": 45,
-    "intensity": "Moderate",
-    "notes": "Mantener ritmo constante"
-  },
-  {
-    "date": "2026-04-23",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min calentamiento + 4x6 min en zona 3 con 3 min suaves entre bloques + 10 min enfriamiento",
-    "duration_min": 75,
-    "intensity": "Z2-Z3 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-24",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "8 km trote continuo",
+    "description": "200m + 3x200m (40s) + 4x100m (30s) + 100m enfriamiento",
     "duration_min": 50,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-25",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min calentamiento + 90 min en zona 2 + 15 min suave",
-    "duration_min": 120,
-    "intensity": "Z2 (Watts)",
-    "notes": "Practicar alimentación"
-  },
-  {
-    "date": "2026-04-25",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "15 min trote continuo inmediatamente después de la bici",
-    "duration_min": 15,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-26",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "10 km trote continuo",
-    "duration_min": 60,
-    "intensity": "Z2 (HR)",
-    "notes": ""
+    "intensity": "Moderate",
+    "notes": "Construcción progresiva"
   },
   {
     "date": "2026-04-27",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 6x50m patada + 6x50m un brazo + 6x50m respiración bilateral + 4x100m controlado",
-    "duration_min": 50,
+    "description": "200m calentamiento + 4x50m patada (30s) + 4x50m técnica agarre (30s) + 4x50m respiración bilateral (30s) + 6x100m ritmo cómodo (30s) + 100m suave",
+    "duration_min": 45,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-27",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "3 rondas: plancha 40s, hip thrust 12 reps, lunges 10 por pierna, peso muerto moderado",
-    "duration_min": 40,
-    "intensity": "Moderate",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-28",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Mantener técnica con fatiga ligera"
   },
   {
     "date": "2026-04-29",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m + 1400m continuo + 100m suave",
+    "description": "200m + 2x300m (45s) + 4x100m (30s) + 100m enfriamiento",
     "duration_min": 50,
     "intensity": "Moderate",
-    "notes": ""
-  },
-  {
-    "date": "2026-04-30",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 50 min zona 2 constante + 10 min enfriamiento",
-    "duration_min": 70,
-    "intensity": "Z2 (Watts)",
-    "notes": "Cadencia estable"
-  },
-  {
-    "date": "2026-05-01",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "8 km trote + 4 progresiones de 20 seg al final",
-    "duration_min": 50,
-    "intensity": "Z2 (HR)",
-    "notes": "Activación ligera"
-  },
-  {
-    "date": "2026-05-02",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min + 105 min zona 2 + 15 min suave",
-    "duration_min": 135,
-    "intensity": "Z2 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-02",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "15 min trote continuo post bici",
-    "duration_min": 15,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-03",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "11 km trote continuo",
-    "duration_min": 65,
-    "intensity": "Z2 (HR)",
-    "notes": ""
+    "notes": "Primer contacto con 300m"
   },
   {
     "date": "2026-05-04",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 8x50m técnica agarre + 4x100m + 200m suave",
-    "duration_min": 50,
+    "description": "200m + 6x50m técnica (patada, un brazo, respiración) + 4x100m controlados + 200m suave",
+    "duration_min": 45,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-04",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "Core + glúteo: plancha lateral, puente glúteo, sentadilla goblet, peso muerto",
-    "duration_min": 40,
-    "intensity": "Moderate",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-05",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Recuperación activa"
   },
   {
     "date": "2026-05-06",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m calentamiento + 1500m continuo + 100m suave",
+    "description": "200m + 400m continuo + 4x100m (30s) + 4x50m suaves + 100m enfriamiento",
     "duration_min": 50,
     "intensity": "Moderate",
-    "notes": "Acercándote a distancia objetivo"
-  },
-  {
-    "date": "2026-05-07",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min calentamiento + 5x5 min en zona 3 con 3 min suaves entre bloques + 10 min enfriamiento",
-    "duration_min": 80,
-    "intensity": "Z2-Z3 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-08",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "9 km trote continuo",
-    "duration_min": 55,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-09",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min calentamiento + 120 min en zona 2 + 15 min suave",
-    "duration_min": 150,
-    "intensity": "Z2 (Watts)",
-    "notes": "Practicar nutrición en ruta"
-  },
-  {
-    "date": "2026-05-09",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "20 min trote continuo inmediatamente después de la bici",
-    "duration_min": 20,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-10",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "12 km trote continuo",
-    "duration_min": 70,
-    "intensity": "Z2 (HR)",
-    "notes": ""
+    "notes": "Primer continuo controlado"
   },
   {
     "date": "2026-05-11",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 6x50m patada + 6x50m técnica agarre + 6x50m respiración bilateral + 4x100m controlado",
-    "duration_min": 50,
+    "description": "200m + 4x50m patada + 4x50m técnica agarre + 6x100m suaves (30s) + 100m enfriamiento",
+    "duration_min": 45,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-11",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "3 rondas: plancha 45s, hip thrust 12 reps, lunges 12 por pierna, peso muerto moderado",
-    "duration_min": 40,
-    "intensity": "Moderate",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-12",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Eficiencia"
   },
   {
     "date": "2026-05-13",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m + 1600m continuo + 100m suave",
+    "description": "200m + 2x400m (45s) + 4x50m suaves + 100m enfriamiento",
     "duration_min": 55,
     "intensity": "Moderate",
-    "notes": ""
+    "notes": "Resistencia sólida"
   },
-  {
-    "date": "2026-05-14",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 3x10 min en zona 3 con 5 min suaves entre bloques + enfriamiento",
-    "duration_min": 85,
-    "intensity": "Z2-Z3 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-15",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "10 km trote continuo",
-    "duration_min": 60,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-16",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min + 135 min zona 2 + 15 min suave",
-    "duration_min": 165,
-    "intensity": "Z2 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-16",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "20 min trote post bici",
-    "duration_min": 20,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-17",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "13 km trote continuo",
-    "duration_min": 75,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
+
   {
     "date": "2026-05-18",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 8x50m técnica + 4x100m + 200m suave",
-    "duration_min": 50,
+    "description": "200m calentamiento + 6x50m técnica (patada, un brazo, respiración bilateral) (30s) + 4x100m ritmo cómodo (30s) + 200m suave",
+    "duration_min": 45,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-18",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "Core + estabilidad: plancha lateral, bird dog, puente glúteo, sentadilla ligera",
-    "duration_min": 40,
-    "intensity": "Moderate",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-19",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Soltar antes de subir volumen"
   },
   {
     "date": "2026-05-20",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m + 1700m continuo + 100m suave",
-    "duration_min": 60,
+    "description": "200m + 500m continuo + 4x100m (30s) + 4x50m suaves + 100m enfriamiento",
+    "duration_min": 55,
     "intensity": "Moderate",
-    "notes": "Muy cerca de distancia completa"
-  },
-  {
-    "date": "2026-05-21",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min calentamiento + 4x6 min en zona 3 con 3 min suaves entre bloques + 10 min enfriamiento",
-    "duration_min": 85,
-    "intensity": "Z2-Z3 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-22",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "10 km trote continuo + 4 progresiones de 20 seg al final",
-    "duration_min": 60,
-    "intensity": "Z2 (HR)",
-    "notes": "Activación"
-  },
-  {
-    "date": "2026-05-23",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min calentamiento + 150 min en zona 2 + 15 min suave",
-    "duration_min": 180,
-    "intensity": "Z2 (Watts)",
-    "notes": "Practicar nutrición completa"
-  },
-  {
-    "date": "2026-05-23",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "25 min trote continuo inmediatamente después de la bici",
-    "duration_min": 25,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-24",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "14 km trote continuo",
-    "duration_min": 80,
-    "intensity": "Z2 (HR)",
-    "notes": ""
+    "notes": "Primer bloque largo continuo"
   },
   {
     "date": "2026-05-25",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 6x50m patada + 6x50m un brazo + 6x50m respiración bilateral + 4x100m controlado",
-    "duration_min": 50,
+    "description": "200m + 4x50m patada + 4x50m técnica agarre + 6x100m suaves (30s) + 100m enfriamiento",
+    "duration_min": 45,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-25",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "3 rondas: plancha 45s, hip thrust 12 reps, lunges 12 por pierna, peso muerto moderado",
-    "duration_min": 40,
-    "intensity": "Moderate",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-26",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Recuperación activa"
   },
   {
     "date": "2026-05-27",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m calentamiento + 1800m continuo + 100m suave",
-    "duration_min": 60,
+    "description": "200m + 600m continuo + 4x100m (30s) + 100m suave",
+    "duration_min": 50,
     "intensity": "Moderate",
-    "notes": "Casi distancia completa"
-  },
-  {
-    "date": "2026-05-28",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 60 min zona 2 constante + 10 min enfriamiento",
-    "duration_min": 80,
-    "intensity": "Z2 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-29",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "11 km trote continuo",
-    "duration_min": 65,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-30",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min calentamiento + 165 min en zona 2 + 15 min suave",
-    "duration_min": 195,
-    "intensity": "Z2 (Watts)",
-    "notes": "Simular estrategia de carrera"
-  },
-  {
-    "date": "2026-05-30",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "25 min trote post bici",
-    "duration_min": 25,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-05-31",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "15 km trote continuo",
-    "duration_min": 85,
-    "intensity": "Z2 (HR)",
-    "notes": ""
+    "notes": "Aumentar confianza en continuo"
   },
   {
     "date": "2026-06-01",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 8x50m técnica agarre + 4x100m + 200m suave",
-    "duration_min": 50,
+    "description": "200m + 6x50m técnica (alternando drills) + 4x100m controlados + 200m suave",
+    "duration_min": 45,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-01",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "Core + glúteo: plancha lateral, puente glúteo, sentadilla goblet, peso muerto",
-    "duration_min": 40,
-    "intensity": "Moderate",
-    "notes": "Últimas semanas completas de gym"
-  },
-  {
-    "date": "2026-06-02",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Mantener eficiencia"
   },
   {
     "date": "2026-06-03",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m + 1900m continuo + 100m suave",
-    "duration_min": 65,
+    "description": "200m + 800m continuo + 4x50m suaves + 100m enfriamiento",
+    "duration_min": 55,
     "intensity": "Moderate",
-    "notes": "Distancia completa"
+    "notes": "Primer 800 continuo cómodo"
   },
-  {
-    "date": "2026-06-04",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 3x10 min zona 3 con 5 min suaves entre bloques + enfriamiento",
-    "duration_min": 90,
-    "intensity": "Z2-Z3 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-05",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "10 km trote continuo + 4 progresiones de 20 seg al final",
-    "duration_min": 60,
-    "intensity": "Z2 (HR)",
-    "notes": "Activación ligera"
-  },
-  {
-    "date": "2026-06-06",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min calentamiento + 180 min en zona 2 + 15 min suave",
-    "duration_min": 210,
-    "intensity": "Z2 (Watts)",
-    "notes": "Practicar nutrición exacta de carrera"
-  },
-  {
-    "date": "2026-06-06",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "30 min trote continuo inmediatamente después de la bici",
-    "duration_min": 30,
-    "intensity": "Z2 (HR)",
-    "notes": "Simulación real"
-  },
-  {
-    "date": "2026-06-07",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "16 km trote continuo",
-    "duration_min": 90,
-    "intensity": "Z2 (HR)",
-    "notes": "Ritmo cómodo"
-  },
+
   {
     "date": "2026-06-08",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 6x50m patada + 6x50m técnica agarre + 4x100m suave",
+    "description": "200m calentamiento + 6x50m técnica (patada, agarre, respiración bilateral) (30s) + 4x100m suaves (30s) + 200m relajado",
     "duration_min": 45,
     "intensity": "Easy",
-    "notes": "Soltar cuerpo"
-  },
-  {
-    "date": "2026-06-08",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "Core ligero: plancha, bird dog, puente glúteo, sin fatigar piernas",
-    "duration_min": 30,
-    "intensity": "Low",
-    "notes": "Reducir carga"
-  },
-  {
-    "date": "2026-06-09",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Sesión ligera antes de volumen"
   },
   {
     "date": "2026-06-10",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m + 1900m continuo + 100m suave",
-    "duration_min": 65,
+    "description": "200m + 1000m continuo + 4x50m suaves + 100m enfriamiento",
+    "duration_min": 55,
     "intensity": "Moderate",
-    "notes": "Mantener confianza"
-  },
-  {
-    "date": "2026-06-11",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 4x8 min en zona 3 con 4 min suaves entre bloques + enfriamiento",
-    "duration_min": 85,
-    "intensity": "Z2-Z3 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-12",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "10 km trote continuo",
-    "duration_min": 60,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-13",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "15 min calentamiento + 210 min en zona 2 + 15 min suave",
-    "duration_min": 240,
-    "intensity": "Z2 (Watts)",
-    "notes": "Rodada más larga del plan"
-  },
-  {
-    "date": "2026-06-13",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "35 min trote continuo post bici",
-    "duration_min": 35,
-    "intensity": "Z2 (HR)",
-    "notes": "Clave mental"
-  },
-  {
-    "date": "2026-06-14",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "17 km trote continuo",
-    "duration_min": 95,
-    "intensity": "Z2 (HR)",
-    "notes": "Pico de carrera"
+    "notes": "Primer 1000 continuo cómodo"
   },
   {
     "date": "2026-06-15",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 8x50m técnica suave + 200m relajado",
-    "duration_min": 40,
+    "description": "200m + 4x50m patada + 4x50m técnica agarre + 6x100m suaves (30s) + 100m enfriamiento",
+    "duration_min": 45,
     "intensity": "Easy",
-    "notes": "Inicio descarga"
-  },
-  {
-    "date": "2026-06-15",
-    "day": "Monday",
-    "discipline": "Gym",
-    "type": "Strength",
-    "description": "Core muy ligero: planchas suaves, movilidad",
-    "duration_min": 25,
-    "intensity": "Low",
-    "notes": "Última semana de gym"
-  },
-  {
-    "date": "2026-06-16",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Recuperación activa"
   },
   {
     "date": "2026-06-17",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m + 1500m continuo + 100m suave",
-    "duration_min": 50,
+    "description": "200m + 1200m continuo + 100m suave",
+    "duration_min": 55,
     "intensity": "Moderate",
-    "notes": "Reduciendo volumen"
+    "notes": "Construcción fuerte de resistencia continua"
   },
-  {
-    "date": "2026-06-18",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 50 min zona 2 constante + 10 min suave",
-    "duration_min": 70,
-    "intensity": "Z2 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-19",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "8 km trote muy cómodo",
-    "duration_min": 50,
-    "intensity": "Z2 (HR)",
-    "notes": "Sensación ligera"
-  },
-  {
-    "date": "2026-06-20",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Long",
-    "description": "10 min calentamiento + 120 min en zona 2 + 10 min suave",
-    "duration_min": 140,
-    "intensity": "Z2 (Watts)",
-    "notes": "Última rodada relativamente larga"
-  },
-  {
-    "date": "2026-06-20",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "20 min trote muy cómodo post bici",
-    "duration_min": 20,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-21",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Long",
-    "description": "12 km trote continuo",
-    "duration_min": 70,
-    "intensity": "Z2 (HR)",
-    "notes": "Última corrida larga"
-  },
-
   {
     "date": "2026-06-22",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 6x50m técnica suave (patada, agarre, respiración) + 200m relajado",
-    "duration_min": 35,
+    "description": "200m + 6x50m técnica (alternando drills) + 4x100m controlados + 200m suave",
+    "duration_min": 45,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-23",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Mantener eficiencia"
   },
   {
     "date": "2026-06-24",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m + 1200m continuo + 100m suave",
-    "duration_min": 45,
+    "description": "200m + 1500m continuo + 100m enfriamiento",
+    "duration_min": 65,
     "intensity": "Moderate",
-    "notes": "Reduciendo volumen"
+    "notes": "Muy cerca de distancia de carrera"
   },
-  {
-    "date": "2026-06-25",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 40 min zona 2 + 5 min zona 3 + 5 min suave",
-    "duration_min": 60,
-    "intensity": "Z2-Z3 (Watts)",
-    "notes": "Activación ligera"
-  },
-  {
-    "date": "2026-06-26",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "7 km trote + 3 aceleraciones de 20 seg",
-    "duration_min": 45,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-27",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 60 min zona 2 + 10 min suave",
-    "duration_min": 80,
-    "intensity": "Z2 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-27",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "15 min trote cómodo",
-    "duration_min": 15,
-    "intensity": "Z2 (HR)",
-    "notes": "Mantener sensación"
-  },
-  {
-    "date": "2026-06-28",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "8 km trote muy relajado",
-    "duration_min": 50,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-
   {
     "date": "2026-06-29",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
-    "description": "200m + 4x50m técnica + 200m suave",
-    "duration_min": 30,
+    "description": "200m calentamiento + 6x50m técnica (patada, agarre, respiración bilateral) (30s) + 4x100m suaves (30s) + 200m relajado",
+    "duration_min": 45,
     "intensity": "Easy",
-    "notes": ""
-  },
-  {
-    "date": "2026-06-30",
-    "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
+    "notes": "Soltar antes del último bloque fuerte"
   },
   {
     "date": "2026-07-01",
     "day": "Wednesday",
     "discipline": "Swim",
     "type": "Endurance",
-    "description": "200m + 1000m continuo + 100m suave",
-    "duration_min": 40,
+    "description": "200m + 1600m continuo + 100m enfriamiento",
+    "duration_min": 65,
     "intensity": "Moderate",
-    "notes": ""
+    "notes": "Simulación casi completa"
   },
-  {
-    "date": "2026-07-02",
-    "day": "Thursday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 30 min zona 2 + 5 min zona 3 + 5 min suave",
-    "duration_min": 50,
-    "intensity": "Z2-Z3 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-07-03",
-    "day": "Friday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "6 km trote cómodo",
-    "duration_min": 35,
-    "intensity": "Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-07-04",
-    "day": "Saturday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 40 min zona 2 + 10 min suave",
-    "duration_min": 60,
-    "intensity": "Z2 (Watts)",
-    "notes": ""
-  },
-  {
-    "date": "2026-07-04",
-    "day": "Saturday",
-    "discipline": "Run",
-    "type": "Brick",
-    "description": "10 min trote muy ligero",
-    "duration_min": 10,
-    "intensity": "Z2 (HR)",
-    "notes": "Solo activar"
-  },
-  {
-    "date": "2026-07-05",
-    "day": "Sunday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "5 km trote relajado",
-    "duration_min": 30,
-    "intensity": "Z1-Z2 (HR)",
-    "notes": ""
-  },
-
   {
     "date": "2026-07-06",
+    "day": "Monday",
+    "discipline": "Swim",
+    "type": "Technique",
+    "description": "200m + 4x50m técnica + 4x100m muy suaves (30s) + 100m relajado",
+    "duration_min": 35,
+    "intensity": "Easy",
+    "notes": "Inicio taper"
+  },
+  {
+    "date": "2026-07-08",
+    "day": "Wednesday",
+    "discipline": "Swim",
+    "type": "Endurance",
+    "description": "200m + 1200m continuo cómodo + 100m suave",
+    "duration_min": 45,
+    "intensity": "Moderate",
+    "notes": "Última sesión de volumen moderado"
+  },
+  {
+    "date": "2026-07-13",
     "day": "Monday",
     "discipline": "Swim",
     "type": "Technique",
     "description": "200m suave + 4x50m técnica + 100m relajado",
     "duration_min": 25,
     "intensity": "Easy",
-    "notes": "Semana del evento"
+    "notes": "Activación ligera"
   },
   {
-    "date": "2026-07-07",
+    "date": "2026-07-14",
     "day": "Tuesday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": ""
-  },
-  {
-    "date": "2026-07-08",
-    "day": "Wednesday",
-    "discipline": "Bike",
-    "type": "Short",
-    "description": "10 min + 30 min zona 2 + 5 min suave",
-    "duration_min": 45,
-    "intensity": "Z2 (Watts)",
-    "notes": "Activar piernas"
-  },
-  {
-    "date": "2026-07-09",
-    "day": "Thursday",
-    "discipline": "Run",
-    "type": "Short",
-    "description": "5 km trote muy suave",
-    "duration_min": 30,
-    "intensity": "Z1-Z2 (HR)",
-    "notes": ""
-  },
-  {
-    "date": "2026-07-10",
-    "day": "Friday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso total",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": "Preparación mental"
-  },
-  {
-    "date": "2026-07-11",
-    "day": "Saturday",
-    "discipline": "Rest",
-    "type": "Recovery",
-    "description": "Descanso",
-    "duration_min": 0,
-    "intensity": "None",
-    "notes": "Todo listo"
-  },
-  {
-    "date": "2026-07-15",
-    "day": "Wednesday",
-    "discipline": "Race",
-    "type": "70.3",
-    "description": "Natación 1.9km + Ciclismo 90km + Carrera 21km",
-    "duration_min": 360,
-    "intensity": "Z2 constante",
-    "notes": "Disfruta, controla el ritmo y termina fuerte"
+    "discipline": "Swim",
+    "type": "Activation",
+    "description": "100m suave + 2x50m progresivos + 50m relajado",
+    "duration_min": 15,
+    "intensity": "Easy",
+    "notes": "Solo soltar antes del evento"
   }
 ]
